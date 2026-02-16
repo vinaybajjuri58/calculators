@@ -156,6 +156,8 @@ body {
 /* Sidebar */
 .sidebar {
   width: 220px;
+  min-width: 220px;
+  flex-shrink: 0;
   background: var(--bg-card-dark);
   padding: 0.75rem 0;
   border-right: 1px solid var(--border-dark);
