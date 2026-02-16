@@ -17,64 +17,65 @@ Build a lightweight, responsive personal finance calculator web app with 20+ cal
 5. **Traders** - Position size, risk/reward calculators
 
 ## Core Requirements (Static)
-- [x] 20+ finance calculators
+- [x] 20+ finance calculators (21 implemented)
 - [x] Searchable currency selector (INR default, 12+ currencies)
 - [x] Responsive design (mobile, tablet, desktop)
 - [x] Elderly-friendly UI (large fonts, high contrast)
 - [x] No login required
 - [x] Dark bento-style dashboard with category sections
 
-## What's Been Implemented (Jan 2026)
+## What's Been Implemented
 
-### Phase 1 - MVP Complete
+### Phase 1 - MVP Complete (Jan 2026)
 - **Dashboard**: "Financial Calculators" home with dark bento-style cards organized by category
 - **Theme System**: Centralized theme.js with CSS variables
 - **Currency Selector**: Searchable dropdown, INR default, positioned in calculator header
 
-### Fully Functional Calculators:
-1. **Mortgage Calculator** - With donut chart breakdown
-2. **EMI / Loan Calculator** - With payment breakdown
-3. **Amortization Schedule** - Full payment table + early payoff calculator
-4. **Compound Interest** - With SIP support and growth chart
-5. **XIRR Calculator** - For Chitti finance and irregular investments
-6. **Expense Ratio Impact** - Shows fee erosion over time with bar chart
-7. **FIRE Calculator** - With progress ring
-8. **Net Worth Calculator** - Full width with asset allocation chart
+### All 21 Calculators Implemented:
+1. Mortgage Calculator - With donut chart breakdown
+2. EMI / Loan Calculator - With payment breakdown
+3. Credit Card Payoff Calculator - Min vs fixed payment comparison
+4. Amortization Schedule - Full payment table + early payoff
+5. Compound Interest - With SIP support and growth chart
+6. Investment Growth - SIP/lumpsum projection
+7. XIRR Calculator - For Chitti finance and irregular investments
+8. Expense Ratio Impact - Fee erosion over time
+9. ROI & CAGR Calculator - Return analysis with progress ring
+10. Retirement Calculator - Corpus comparison
+11. FIRE Calculator - With progress ring
+12. Savings Goal Calculator - Monthly savings needed
+13. Debt Snowball Calculator - Smallest debt first strategy
+14. Debt Avalanche Calculator - Highest interest first strategy
+15. Inflation Impact Calculator - Purchasing power erosion
+16. Net Worth Calculator - Assets vs liabilities with allocation chart
+17. Life Insurance Calculator - Coverage needs analysis
+18. Opportunity Cost Calculator - Investment comparison
+19. Position Size Calculator - Trading risk management
+20. Risk/Reward Calculator - Trade analysis
+21. Break-even Calculator - Units/revenue to cover costs
 
-### Charts & Visualizations:
-- Animated donut charts (180px)
-- Animated bar charts (28px bar height)
-- Progress rings (160px)
-- All charts handle dynamic value changes without breaking
+### Bug Fixes (Feb 2026)
+- Fixed sidebar width bug: sidebar no longer shrinks on Net Worth calculator page (added flex-shrink: 0 and min-width: 220px)
 
 ## Prioritized Backlog
 
-### P0 - Next Sprint
-- Investment Growth Calculator
-- Credit Card Payoff Calculator
-- Retirement Calculator with corpus comparison
-- ROI & CAGR Calculator
-
 ### P1 - High Priority
-- Debt Snowball/Avalanche with payoff timeline
-- Inflation Impact Calculator
-- Life Insurance Coverage Calculator
-- Savings Goal Calculator
+- SEO improvements (dynamic title/meta tags per page)
+- Print/PDF export for calculator results
 
 ### P2 - Nice to Have
-- Position Size Calculator (trading)
-- Risk/Reward Calculator (trading)
-- Break-even Calculator
-- Opportunity Cost Calculator
+- PWA support for offline usage
+- Social share functionality
+- Download schedule feature for Amortization
+
+### P3 - Future
+- User authentication & data persistence
+- Functional advertisement integration
+- Split App.js into separate component files for maintainability
 
 ## Technical Notes
 - Indian number formatting (lakhs, crores)
-- XIRR uses Newton-Raphson method for accurate calculation
-- Charts use CSS animations for smooth transitions
+- XIRR uses Newton-Raphson method
+- Charts use CSS animations
 - Theme colors: accent #2d8a6e, dark bg #0a0a0a, card bg #f5f0e6
-
-## Next Tasks
-1. Complete remaining calculators from P0 list
-2. Add print/PDF export for results
-3. Add social share functionality
-4. Consider PWA for offline usage
+- Sidebar: fixed 220px width with flex-shrink: 0
